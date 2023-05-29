@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+    <link href="./styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="label">
+        <img class="logo" src="imagenes/Frame 6.png" alt="logo de alura" >
+      <header>
+        <h1 class="bold">Bienvenido</h1>
+        <div class="divider"></div>
+        <p>Encriptador de Texto Challenge</p>
+      </header>
+      
+      <div class="divider md"></div>
+      <div class="daily-value sm-text">
+        <div class="divider"></div>
+        <section>
+            <textarea class="text-area" cols="32" rows="10" placeholder="Ingresa el texto a encriptar"></textarea>
+        <div class="divider"></div>
+        <p class="no-divider"><span class="bold">Resultado: </span></p>
+        <div class="divider lg"></div>
+        <section>
+            <textarea class="mensaje" cols="32" rows="10"></textarea>
+            <button class="copiar" onclick="copiar()">Copiar</button>
+        </section>
+      </div>
+      <div class="divider md"></div>
+      
+      <div class="botones">
+        <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+        <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+     </div>
+      <div class="divider lg"></div>
+      <p class="note">* Usar unicamente letras en minúsculas y sin acentos</p>
+      </div>
+    <script src="script.js"></script>
+  </body>
+</html>
