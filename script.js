@@ -21,7 +21,7 @@ function btnEncriptar(){
         const textoEncriptado = encriptar(textArea.value)
         mensaje.value = textoEncriptado
         mensaje.style.backgroundImage = "none"
-        textArea.value = "";
+        /*textArea.value = "";*/
         copia.style.display = "block"
     
     }
@@ -32,11 +32,11 @@ function btnEncriptar(){
 // `La letra "i" es convertida para "itan"`
 // `La letra "a" es convertida para "achu"`
 // `La letra "o" es convertida para "onichan"`
-// `La letra "u" es convertida para "uwus"`
+// `La letra "u" es convertida para "uw"`
 
 
 function encriptar(stringEncriptada){
-    let matrizCodigo = [["e", "ene"], ["i", "itan"], ["a", "achu"], ["o", "onichan"], ["u", "uwus"]];
+    let matrizCodigo = [["e", "ene"], ["i", "itan"], ["a", "achu"], ["o", "onichan"], ["u", "uw"]];
     stringEncriptada = stringEncriptada.toLowerCase()
 
     for(let i = 0; i < matrizCodigo.length; i++){
@@ -60,7 +60,7 @@ function btnDesencriptar(){
 
 
 function desencriptar(stringDesencriptada){
-    let matrizCodigo = [["e", "ene"], ["i", "itan"], ["a", "achu"], ["o", "onichan"], ["u", "uwus"]];
+    let matrizCodigo = [["e", "ene"], ["i", "itan"], ["a", "achu"], ["o", "onichan"], ["u", "uw"]];
     stringDesencriptada = stringDesencriptada.toLowerCase()
 
     for(let i = 0; i < matrizCodigo.length; i++){
