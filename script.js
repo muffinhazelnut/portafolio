@@ -21,7 +21,7 @@ function btnEncriptar(){
         const textoEncriptado = encriptar(textArea.value)
         mensaje.value = textoEncriptado
         mensaje.style.backgroundImage = "none"
-        /*textArea.value = "";*/
+        textArea.value = "";
         copia.style.display = "block"
     
     }
